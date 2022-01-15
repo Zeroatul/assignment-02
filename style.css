@@ -1,71 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Domine:wght@500&family=Manrope:wght@400;500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Domine:wght@500&family=Inter:wght@300;400;500&family=Manrope:wght@400;500&family=Poppins&display=swap');
+
+
+
+
+
 
 
 body{
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 .nav-section{
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  align-items: center;
-  margin-top: 50px;
-  margin: auto;
-
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
 }
-.links>ul{
+.nav-section > div > h2{
+    color: #3a3a3a;
+}
+.links > ul{
     display: flex;
     
 }
 
-.links>ul>li{
+.links > ul > li{
     display: flex;
     list-style: none;
-    margin-right: 34px;
     align-items: center;
 }
-.links>ul>li>a{
+.links > ul > li > a{
     text-decoration: none;
-    color: #000000;
+    color: #3a3a3a;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 7px 15px;
+    margin-right: 5px;
     
 }
+.nav-icon{
+    padding: 7px 15px;
+    margin-right: 5px;
+}
+.links > ul > li> a:hover{
+    background-color: #E02C6D;
+    border-radius: 3px;
+    color: #ffffff;
+    transition-delay: 0.1s;
+}
 .heading{
-    display: flex;justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
     
 }
 .main-heading{
     width: 40%;
 }
-.main-heading>h1{
+.main-heading > h1{
     font-size: 52px;
     font-weight: 700;
+    color: #3a3a3a;
 }
-.main-heading>p{
+.main-heading > p{
     font-weight: 600;
     font-size: 16px;
+    color: #3a3a3a;
 }
 .main-camera{
+    margin-top: 30px;
     width: 475px;
     height: 475px;
     background-image: url(images/Circle\ design.svg);
     
 }
-.main-camera>img{
+.main-camera > img{
     padding: 20px;
     
 }
 .button{
+    border: none;
     background: #E02C6D;
     border-radius: 41px;
     padding: 10px 24px 10px 24px;  
     color: #ffffff;
     font-size: 16px;
-    font-weight: bold;     
+    font-weight: bold;  
+    align-items: center;   
+}
+.button:hover{
+    transform: scale(1.3);
 }
 .fas{
     padding-left: 10px;
     font-size: 20px;
+    align-items: center;
 }
 .logos{
     display: flex;
@@ -78,7 +116,113 @@ body{
     margin-top: 100px;
     
 }
-.logos>img{
+.logos > img{
     margin: 20px;
     
+}
+.popular-collection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.popular-collection > h2{
+    margin: 100px auto 40px;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 25px;
+}
+.products{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 15px;
+    font-family: 'Inter', sans-serif;
+}
+.products > h2 {
+    font-size: 28px;
+    font-weight: 500;
+
+}
+.products > h3 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+
+}
+.stars{
+    display: flex;
+    align-items: center;
+    color: #FB8200;
+    margin-left: 0;
+    padding-left: 0;
+    
+}
+
+.stars > p{
+    margin: 0;
+    padding: 0;
+    padding-left: 5px;
+}
+.star{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------/*
+     footer
+/*------------------ */
+
+
+
+
+
+.footer{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: #0A0826;
+    padding-top: 50px;
+    
+}
+.footer>h2{
+    color: #D9DBE1;
+    font-weight: 500;
+    font-size: 24px;
+}
+.footer>small{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.footer>small>p{
+    margin: 0 auto;
+    font-weight: 500;
+    color: #D9DBE1;
+    font-family: 'Manrope', sans-serif;
+    /* font-size: 14px; */
+}
+.social-icons{
+    color: #ffffff;
+    margin: 10px;
+    background-color: #22213c;
+    border: 8px solid #22213c;
+    border-radius: 50%;
+    font-size: 16px;
+}
+.social-media{
+    display: flex;
 }
