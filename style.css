@@ -84,17 +84,18 @@ body{
     color: #3a3a3a;
 }
 .main-camera{
+    flex-basis: 40%;
     margin-top: 30px;
-    width: 475px;
-    height: 475px;
-    /* background-image: url(images/Circle\ design.svg); */
     animation-name: image-background;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-size: contain;
     
 }
 .main-camera > img{
     padding: 20px;
+    width: 90%;
     
 }
 .button{
@@ -123,7 +124,7 @@ span{
 
 #pre-order{
     animation-name: button-gradiant;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -344,4 +345,87 @@ span{
 }
 .social-media{
     display: flex;
+}
+
+
+
+
+
+/* -----------------------
+        media quaries
+-------------------------- */
+
+
+/*---------------- mobile----------- */
+
+@media only screen and (max-width:688px) {
+    .links{
+        display: none;
+    }
+    .main-heading > h1{
+        font-size: 42px;
+        text-align: center;
+
+    }
+    .main-heading{
+        width: 80%;
+        text-align: center;
+    }
+
+
+
+
+    .products img {
+        width: 100%;
+
+
+    }
+    .navigation > h2 ::before{
+        content: "<i class="fas fa-bars"> </i>";
+        color: black;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .heading{
+        flex-direction: column-reverse;
+    }
+    .logos{
+        flex-wrap: wrap;
+    }
+    .course{
+        flex-direction: column-reverse;
+        
+    }
+    .course > img{
+        margin: 50px auto ;
+        width: 80%;
+        flex-basis: 70%;
+    }
+    .course-detail{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .course-detail > h2{
+        font-size: 28px;
+        text-align: center;
+        
+
+    }
+    
+    #enroll{
+        margin-top: 40px;
+    }
+    .products > p{
+        font-size: 16px;
+        
+    
+    
+    }
+    
 }
