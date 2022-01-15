@@ -31,6 +31,9 @@ body{
     display: flex;
     
 }
+.mobile-icon{
+    display: none;
+}
 
 .links > ul > li{
     display: flex;
@@ -361,6 +364,14 @@ span{
 @media only screen and (max-width:688px) {
     .links{
         display: none;
+    }
+
+    .nav-section > div {
+        margin: auto;
+    }
+
+    .mobile-icon{
+        display: block;
     }
     .main-heading > h1{
         font-size: 42px;
