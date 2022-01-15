@@ -24,7 +24,7 @@ body{
     margin: auto;
     margin-top: 50px;
 }
-.nav-section > div > h2{
+.navigation > h2{
     color: #3a3a3a;
 }
 .links > ul{
@@ -273,7 +273,7 @@ span{
     
 }
 .course > img{
-    width: 28%;
+    width: 35%;
     flex-basis: 30%;
 }
 .course-detail{
@@ -365,13 +365,24 @@ span{
     .links{
         display: none;
     }
+    .nav-section{
+        width: 100%;
+        justify-content: space-between;
+    }
 
-    .nav-section > div {
+    .navigation {
         margin: auto;
+        
+    }
+    .navigation >h2 {
+       font-size: 34px;
     }
 
     .mobile-icon{
-        display: block;
+        display: inline-block;
+        padding: 20px;
+        font-size: 24px;
+        
     }
     .main-heading > h1{
         font-size: 42px;
@@ -437,6 +448,98 @@ span{
         
     
     
+    }
+    
+}
+
+
+
+
+
+
+/*--------------------------- tablet --------------------- */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .links{
+        display: none;
+    }
+    .nav-section{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navigation {
+        margin: auto;
+        
+    }
+    .navigation >h2 {
+       font-size: 44px;
+    }
+
+    .mobile-icon{
+        display: inline-block;
+        padding: 40px;
+        font-size: 24px;
+        
+    }
+    .main-heading > h1{
+        font-size: 42px;
+        text-align: center;
+
+    }
+    .main-heading{
+        width: 80%;
+        text-align: center;
+    }
+
+    .products img {
+        width: 100%;
+
+
+    }
+    .navigation > h2 ::before{
+        content: "<i class="fas fa-bars"> </i>";
+        color: black;
+    }
+    .items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .heading{
+        flex-direction: column-reverse;
+    }
+    .logos{
+        flex-wrap: wrap;
+    }
+    .course{
+        flex-direction: column-reverse;
+        
+    }
+    .course > img{
+        margin: 50px auto ;
+        width: 80%;
+        flex-basis: 70%;
+    }
+    .course-detail{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .course-detail > h2{
+        font-size: 28px;
+        text-align: center;
+        
+
+    }
+    
+    #enroll{
+        margin-top: 40px;
+    }
+    .products > p{
+        font-size: 16px;
     }
     
 }
